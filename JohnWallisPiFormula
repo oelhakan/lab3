@@ -1,11 +1,11 @@
 package lab3;
 
 public class JohnWallisFormula {
-	static double numerator(double n) {    		// GETTING 2N*2N / (2N+1)(2N-1)
+	static double numerator(double n) {    		// GETTING	4n^2
 		return(4 * n * n);
 }
 	
-	static double denominator(double n) {    		// GETTING 2N*2N / (2N+1)(2N-1)
+	static double denominator(double n) {    		// GETTING (4n^2)-1
 		double tryOut = 4 * n * n;
 		
 		return(tryOut - 1);
@@ -18,7 +18,7 @@ public class JohnWallisFormula {
 		while(true) {
 			result *= (numerator(i) / denominator(i) * 2);  //	multiply by 2 to get pi from pi / 2
 			System.out.println(result);
-			i++;
+			
 }
 	}
 	
