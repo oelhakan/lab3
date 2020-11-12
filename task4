@@ -1,0 +1,34 @@
+package lab3;
+
+public class Task4 {
+	
+	static int[] concatArrs(int [] data1, int[] data2) {
+
+        int[] result = new int[data1.length + data2.length];
+        System.arraycopy(data1, 0, result, 0, data1.length);
+        System.arraycopy(data2, 0, result, data1.length, data2.length);
+       
+        for(int x : result) {
+            System.out.println(x);}
+
+        	return result;
+        }            
+     
+
+	   
+	
+	
+		public static void main(String[] args) {
+			int data1[] = {1, 3, 5, 9, 6};
+			int data2[] = {21, 33, 67, 88};
+			
+	        concatArrs(data1, data2);
+	        
+	           
+	            
+			
+			
+			
+		}
+
+}
